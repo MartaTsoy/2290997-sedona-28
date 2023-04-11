@@ -1,0 +1,40 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.social__link {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: $blue;
+  color: $white;
+  width: 48px;
+  height: 48px;
+  text-decoration: none;
+  margin-right: 6px;
+  margin-bottom: 6px;
+
+  &--vkontakte {
+    background-image: url("/./img/icons/vkontakte.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--telegram {
+    background-image: url("/./img/icons/telegram.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--youtube {
+    background-image: url("/./img/icons/youtube.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

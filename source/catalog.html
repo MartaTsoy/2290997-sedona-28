@@ -5,13 +5,14 @@
   <meta charset="utf-8">
   <link rel="shortcut icon" href="img/favicon/favicon.png" sizes="32x32" type="image/png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
 </head>
 
 <body class="page__body">
 
   <header class="page-header">
-    <a class="page-header__logo">
+    <a class="page-header__logo" href="index.html">
       <img class="page-header__logo-image" src="img/icons/logo.svg" width="185" height="96" alt="HTML Academy: Седона.">
     </a>
     <nav class="page-header__navigation navigation">
@@ -50,52 +51,52 @@
 
       <ul class="catalog__list">
         <li class="catalog__item catalog__item--full">
-          <figure>
+          <figure class="catalog__figure figure">
             <figcaption>
               <a class="catalog__link" href="#">
                 <img class="catalog__image" src="img/content/spaces.jpg" alt="Неродные просторы." width="280" height="280">
               </a>
             </figcaption>
-            <h3 class="catalog__title title">Неродные просторы</h3>
+            <h3 class="catalog__title">Неродные просторы</h3>
             <p class="catalog__author">Автор фото: Борис</p>
             <span class="catalog__likes">1350</span>
           </figure>
         </li>
 
         <li class="catalog__item">
-          <figure>
+          <figure class="catalog__figure figure">
             <figcaption>
               <a class="catalog__link" href="#">
                 <img class="catalog__image" src="img/content/green.jpg" alt="Местная растительность." width="280" height="280">
               </a>
             </figcaption>
-            <h3 class="catalog__title title">Местная растительность</h3>
+            <h3 class="catalog__title">Местная растительность</h3>
             <p class="catalog__author">Автор фото: Сергей</p>
             <span class="catalog__likes">143</span>
           </figure>
         </li>
 
         <li class="catalog__item">
-          <figure>
+          <figure class="catalog__figure figure">
             <figcaption>
               <a class="catalog__link" href="#">
                 <img class="catalog__image" src="img/content/road.jpg" alt="Дорога на север." width="280" height="280">
               </a>
             </figcaption>
-            <h3 class="catalog__title title">Дорога на север</h3>
+            <h3 class="catalog__title">Дорога на север</h3>
             <p class="catalog__author">Автор фото: Петр</p>
             <span class="catalog__likes">96</span>
           </figure>
         </li>
 
         <li class="catalog__item">
-          <figure>
+          <figure class="catalog__figure figure">
             <figcaption>
               <a class="catalog__link" href="#">
                 <img class="catalog__image" src="img/content/bridge-catalog.jpg" alt="Мост Дьявола." width="280" height="280">
               </a>
             </figcaption>
-            <h3 class="catalog__title title">Мост Дьявола</h3>
+            <h3 class="catalog__title">Мост Дьявола</h3>
             <p class="catalog__author">Автор фото: Антон</p>
             <span class="catalog__likes">254</span>
           </figure>
@@ -106,9 +107,9 @@
     </section>
 
     <section class="presentation">
-      <div class="presentation__header heading">
-        <h2 class="heading__title">Все еще сомневаетесь?</h2>
-        <p class="heading__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      <div class="presentation__header">
+        <h2 class="presentation__title">Все еще сомневаетесь?</h2>
+        <p class="presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       </div>
       <div class="presentation__player">
         <img src="img/content/presentation.jpg" alt="Видео-презентация.">
@@ -123,13 +124,19 @@
 
     <ul class="page-footer__social social">
       <li class="social__item">
-        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">Мы в Вконтакте</span>
+        </a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+        <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+          <span class="visually-hidden">Мы в Телеграме</span>
+        </a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">Мы в Ютубе</span>
+        </a>
       </li>
     </ul>
 

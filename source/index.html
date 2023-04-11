@@ -5,13 +5,14 @@
   <meta charset="utf-8">
   <link rel="shortcut icon" href="img/favicon/favicon.png" sizes="32x32" type="image/png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
 </head>
 
 <body class="page__body">
 
   <header class="page-header">
-    <a class="page-header__logo">
+    <a class="page-header__logo" href="index.html">
       <img class="page-header__logo-image" src="img/icons/logo.svg" width="185" height="96" alt="HTML Academy: Седона.">
     </a>
     <nav class="page-header__navigation navigation">
@@ -53,65 +54,65 @@
 
       <ul class="advantages__list">
         <li class="advantages__item advantages__item--background">
-          <figure>
+          <figure class="advantages__figure figure">
             <figcaption>
-              <h2 class="advantages__topic title">Настоящий городок</h2>
+              <h2 class="advantages__title">Настоящий городок</h2>
               <span class="advantages-number">— №1 —</span>
-              <p class="advantages__caption description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+              <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </figcaption>
             <img class="advantages__photo" src="img/content/town.jpg" alt="Вид городка Седона." width="320" height="260">
           </figure>
         </li>
 
-        <li class="advantages__item advantages__item--live">
-          <h2 class="advantages__topic title">Жилье</h2>
-          <p class="advantages__caption description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        <li class="advantages__item advantages__item--features advantages__item--live">
+          <h2 class="advantages__title">Жилье</h2>
+          <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </li>
 
-        <li class="advantages__item advantages__item--food">
-          <h2 class="advantages__topic title">Еда</h2>
-          <p class="advantages__caption description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+        <li class="advantages__item advantages__item--features advantages__item--food">
+          <h2 class="advantages__title">Еда</h2>
+          <p class="advantages__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
         </li>
 
-        <li class="advantages__item advantages__item--souvenirs">
-          <h2 class="advantages__topic title">Сувениры</h2>
-          <p class="advantages__caption description">Не только китайского, но и местного производства!</p>
+        <li class="advantages__item advantages__item--features advantages__item--souvenirs">
+          <h2 class="advantages__title">Сувениры</h2>
+          <p class="advantages__description">Не только китайского, но и местного производства!</p>
         </li>
 
         <li class="advantages__item advantages__item--background">
-          <figure>
+          <figure class="advantages__figure figure">
             <figcaption>
-              <h2 class="advantages__topic title">Там есть мост дьявола</h2>
+              <h2 class="advantages__title">Там есть мост дьявола</h2>
               <span class="advantages-number">— №2 —</span>
-              <p class="advantages__caption description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </figcaption>
             <img class="advantages__photo" src="img/content/bridge.jpg" alt="Виды на мост Дьявола." width="320" height="260">
           </figure>
         </li>
 
         <li class="advantages__item">
-          <h2 class="advantages__topic title">Небольшая площадь</h2>
+          <h2 class="advantages__title">Небольшая площадь</h2>
           <span class="advantages-number">— №3 —</span>
-          <p class="advantages__caption description">Все интересные места находятся очень близко</p>
+          <p class="advantages__description">Все интересные места находятся очень близко</p>
         </li>
 
         <li class="advantages__item">
-          <h2 class="advantages__topic title">Красивая дорога</h2>
+          <h2 class="advantages__title">Красивая дорога</h2>
           <span class="advantages-number">— №4 —</span>
-          <p class="advantages__caption description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
 
         <li class="advantages__item">
-          <h2 class="advantages__topic title">Мало туристов</h2>
+          <h2 class="advantages__title">Мало туристов</h2>
           <span class="advantages-number">— №5 —</span>
-          <p class="advantages__caption description">Большинство едет в гранд каньон и толпится там</p>
+          <p class="advantages__description">Большинство едет в гранд каньон и толпится там</p>
         </li>
       </ul>
     </section>
 
     <section class="search">
-      <h2 class="search__title heading">Заинтересовались?</h2>
-      <p class="search__description description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+      <h2 class="search__title">Заинтересовались?</h2>
+      <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
         предложения гостиниц в седоне</p>
       <a class="search__button button" href="catalog.html">Найти гостиницу</a>
     </section>
@@ -127,13 +128,19 @@
 
     <ul class="page-footer__social social">
       <li class="social__item">
-        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">Мы в Вконтакте</span>
+        </a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+        <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+          <span class="visually-hidden">Мы в Телеграме</span>
+        </a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">Мы в Ютубе</span>
+        </a>
       </li>
     </ul>
 
