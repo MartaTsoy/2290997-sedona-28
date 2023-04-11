@@ -1,5 +1,6 @@
 .search {
   text-align: center;
+  padding: 38px 18px 49px 18px;
 }
 
 .search__title {
@@ -8,6 +9,7 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .search__description {
@@ -16,8 +18,9 @@
   line-height: 21px;
   text-transform: uppercase;
   color: #333333;
+  margin: 0;
+  margin-bottom: 32px;
 }
 
 .search__button {
-  margin-bottom: 49px;
 }

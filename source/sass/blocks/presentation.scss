@@ -2,11 +2,16 @@
   text-align: center;
 }
 
+.presentation__header {
+  margin: 17px 27px 38px 27px;
+}
+
 .presentation__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .presentation__description {
