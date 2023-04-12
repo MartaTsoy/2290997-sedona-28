@@ -23,17 +23,21 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  color: #333333;
+  color: $darkGrey;
   margin: 0;
 }
 
 .advantages__item {
   padding: 37px 18px;
-  background-color: #eeeeee;
+  background-color: $lightGrey;
 
   &--background {
     background-color: $blue;
     color: $white;
+
+    .advantages__description {
+      color: $white;
+    }
   }
 
   &--features {

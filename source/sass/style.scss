@@ -1,6 +1,7 @@
-// Начните писать стили здесь
-@import "./blocks/general.scss";
-@import "./blocks/variables.scss";
+@import "./global/variables.scss";
+@import "./global/fonts.scss";
+@import "./global/utils.scss";
+@import "./global/reboot.scss";
 @import "./blocks/page.scss";
 @import "./blocks/page-header.scss";
 @import "./blocks/navigation.scss";
@@ -14,10 +15,8 @@
 @import "./blocks/social";
 @import "./blocks/button.scss";
 @import "./blocks/copyright.scss";
-@import "./blocks/intro-secondary.scss";
 @import "./blocks/catalog.scss";
 @import "./blocks/presentation.scss";
 @import "./blocks/form.scss";
 @import "./blocks/feedback-form.scss";
 @import "./blocks/contacts.scss";
-
