@@ -1,0 +1,30 @@
+.catalog__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.catalog__author {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $darkGrey;
+  margin: 0;
+  margin-bottom: 11px;
+}
+
+.catalog__likes {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+}

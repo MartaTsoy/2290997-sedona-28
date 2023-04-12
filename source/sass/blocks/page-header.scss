@@ -1,0 +1,9 @@
+.page-header {
+  text-transform: uppercase;
+  color: $black;
+  background-color: $blue;
+
+  @media (min-width: 768px) {
+    background-color: $white;
+  }
+}

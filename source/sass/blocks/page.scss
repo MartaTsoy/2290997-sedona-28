@@ -1,0 +1,25 @@
+.page {
+  min-height: 100%;
+}
+
+.page__body {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  background-color: $Grey;
+  color: $black;
+  font-size: 14px;
+  line-height: 21px;
+  height: 100%;
+}
+
+.page__wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: $white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}

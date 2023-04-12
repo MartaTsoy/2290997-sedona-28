@@ -1,0 +1,21 @@
+.page-footer {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: auto;
+}
+
+.page-footer__hashtag {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.page-footer__social {
+
+}
