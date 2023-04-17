@@ -3,7 +3,7 @@
 }
 
 .presentation__header {
-  margin: 17px 27px 38px 27px;
+  padding: 17px 27px 38px 27px;
 }
 
 .presentation__title {
@@ -12,6 +12,7 @@
   line-height: 26px;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .presentation__description {
@@ -19,4 +20,5 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  margin: 0;
 }

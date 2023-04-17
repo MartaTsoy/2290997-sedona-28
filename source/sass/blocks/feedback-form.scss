@@ -2,6 +2,34 @@
   border: none;
   margin: 0;
   padding: 0;
+
+  &--representative {
+    margin-bottom: 39px;
+  }
+
+  &--contacts {
+    margin-bottom: 34px;
+  }
+
+  &--general {
+    margin-bottom: 24px;
+  }
+
+  &--attractions {
+    margin-bottom: 24px;
+  }
+
+  &--emotions {
+    margin-bottom: 56px;
+  }
+}
+
+.feedback-form__fieldset-wpapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+  }
 }
 
 .feedback-form__legend {
@@ -14,6 +42,52 @@
   margin-bottom: 20px;
 }
 
-.feedback-form__fieldset--emotions {
-  margin-bottom: 56px;
+.feedback-form__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.feedback-form__textarea {
+  background-color: $Grey;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.3);
+  padding: 16px;
+  width: 100%;
+}
+
+.feedback-form__button {
+  width: 100%;
+  margin-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 384px;
+  }
+}
+
+.feedback-form__wrapper-required {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feedback-form__required {
+  align-self: center;
+  margin-left: auto;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.6);
 }

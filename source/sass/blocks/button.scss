@@ -10,8 +10,16 @@
   background-color: $blue;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 8px;
+  padding: 16px;
   border: none;
   font-family: inherit;
   cursor: pointer;
+
+  &:hover {
+    background-color: $blueHover;
+  }
+
+  &:active {
+    background-color: $blueDown;
+  }
 }
