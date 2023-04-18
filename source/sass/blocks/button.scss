@@ -16,10 +16,10 @@
   cursor: pointer;
 
   &:hover {
-    background-color: $blueHover;
+    background-color: $blue-hover;
   }
 
   &:active {
-    background-color: $blueDown;
+    background-color: $blue-down;
   }
 }

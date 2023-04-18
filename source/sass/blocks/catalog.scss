@@ -29,8 +29,27 @@
   }
 }
 
+.catalog__item {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(100% / 3);
+  }
+}
+
 .catalog__item--full {
   width: 100%;
+}
+
+.catalog__link {
+  display: flex;
+}
+
+.catalog__image {
+  width: 100%;
+  height: auto;
 }
 
 .catalog__title {
@@ -45,7 +64,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: $darkGrey;
+  color: $dark-grey;
   margin: 0;
   margin-bottom: 11px;
 }

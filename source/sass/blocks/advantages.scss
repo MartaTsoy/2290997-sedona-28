@@ -59,12 +59,12 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  color: $darkGrey;
+  color: $dark-grey;
   margin: 0;
 }
 
 .advantages__item {
-  background-color: $lightGrey;
+  background-color: $light-grey;
   padding: 24px;
 
   @media (min-width: $tablet-width) {
