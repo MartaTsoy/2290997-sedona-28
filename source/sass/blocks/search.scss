@@ -1,6 +1,14 @@
 .search {
   text-align: center;
   padding: 38px 18px 49px 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 155px 55px 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 370px 66px 370px;
+  }
 }
 
 .search__title {
@@ -10,6 +18,11 @@
   line-height: 26px;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .search__description {
@@ -17,7 +30,7 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  color: $darkGrey;
+  color: $dark-grey;
   margin: 0;
   margin-bottom: 32px;
 }

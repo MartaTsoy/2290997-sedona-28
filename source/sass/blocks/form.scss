@@ -1,0 +1,19 @@
+.form {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+  }
+}
+
+.form__header {
+  padding: 36px 20px 28px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 64px 166px 108px 166px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 115px 380px 68px 380px;
+  }
+}

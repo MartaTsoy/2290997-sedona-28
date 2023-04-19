@@ -1,12 +1,23 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
 .contacts__name {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  color: $darkGrey;
+  color: $dark-grey;
+  margin-left: 16px;
 }
 
 .contacts__input {
-  background-color: $Grey;
+  background-color: $grey;
   border: none;
+  padding: 16px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
 }
