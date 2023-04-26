@@ -24,21 +24,12 @@
   height: 48px;
   text-decoration: none;
 
-  &--vkontakte {
-    background-image: url("../img/icons/vkontakte.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+  &:hover {
+    background-color: $blue-hover;
   }
 
-  &--telegram {
-    background-image: url("../img/icons/telegram.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &--youtube {
-    background-image: url("../img/icons/youtube.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+  &:active {
+    background-color: $blue-down;
+    color: rgba(255, 255, 255, 0.3);
   }
 }
