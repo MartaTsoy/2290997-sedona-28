@@ -1,3 +1,9 @@
+.navigation {
+  position: relative;
+  min-height: 56px;
+  background-color: $white;
+}
+
 .navigation__list {
   display: flex;
   flex-direction: column;
@@ -6,19 +12,21 @@
   padding: 0;
   align-items: center;
   text-align: center;
+  background-color: $blue;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: $white;
   }
 }
 
 .navigation__item {
-  padding-top: 18px;
-  padding-bottom: 12px;
+  box-shadow: 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
   @media (min-width: $tablet-width) {
     width: 20%;
+    box-shadow: none;
 
     &--current {
       .navigation__link {
@@ -32,10 +40,6 @@
       margin: 0 0 0 20%;
     }
   }
-
-  @media (min-width: $tablet-width) {
-    padding: 18px 25px;
-  }
 }
 
 .navigation__link {
@@ -46,6 +50,9 @@
   font-size: 18px;
   line-height: 26px;
   text-decoration: none;
+  display: block;
+  padding-top: 18px;
+  padding-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     color: $black;
@@ -59,3 +66,80 @@
     display: none;
   }
 }
+
+.navigation__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 70px;
+  height: 50px;
+  display: block;
+  cursor: pointer;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.navigation--closed .navigation__toggle::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  width: 23px;
+  height: 22px;
+  background-image: url("../img/icons/hamburger.svg");
+}
+
+.navigation--closed .navigation__toggle:hover::before {
+  opacity: 0.6;
+}
+
+.navigation--closed .navigation__toggle:active::before {
+  opacity: 0.3;
+}
+
+.navigation--opened .navigation__toggle::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  width: 23px;
+  height: 22px;
+  background-image: url("../img/icons/cross.svg");
+}
+
+.navigation--opened .page-header__logo-image {
+  display: none;
+}
+
+.navigation--opened .navigation__toggle:hover::before {
+  opacity: 0.6;
+}
+
+.navigation--opened .navigation__toggle:active::before {
+  opacity: 0.3;
+}
+
+@media (max-width: $tablet-width) {
+  .navigation--closed .navigation__item {
+    display: none;
+  }
+}
+
+/*
+.navigation--nojs .navigation__toggle {
+  display: none;
+}
+
+.navigation--nojs .navigation {
+  display: static;
+  min-height: 0;
+}
+
+.navigation--nojs .navigation__list {
+  display: block;
+}
+*/

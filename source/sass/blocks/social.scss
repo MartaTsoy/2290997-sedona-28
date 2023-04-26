@@ -4,7 +4,13 @@
   list-style: none;
   justify-content: center;
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
+  gap: 6px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .social__link {
@@ -17,8 +23,6 @@
   width: 48px;
   height: 48px;
   text-decoration: none;
-  margin-right: 6px;
-  margin-bottom: 6px;
 
   &--vkontakte {
     background-image: url("../img/icons/vkontakte.svg");

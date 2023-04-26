@@ -70,7 +70,18 @@
 }
 
 .catalog__likes {
+  position: relative;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
+  margin-left: 37px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icons/like.svg");
+    width: 23px;
+    height: 21px;
+    left: -37px;
+  }
 }

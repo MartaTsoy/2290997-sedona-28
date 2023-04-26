@@ -15,7 +15,7 @@
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/icons/logo.svg" width="185" height="96" alt="HTML Academy: Седона.">
       </a>
-      <nav class="page-header__navigation navigation">
+      <nav class="page-header__navigation navigation navigation--closed navigation--opened navigation--nojs">
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть/закрыть меню.</span>
         </button>
@@ -55,10 +55,10 @@
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--background">
             <figure class="advantages__figure figure">
-              <figcaption>
+              <figcaption class="advantages__figcaption figcaption">
                 <h2 class="advantages__title">Настоящий городок</h2>
                 <span class="advantages-number">— №1 —</span>
-                <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+                <p class="advantages__description">Седона не аттракцион для туристов, <br> там течет своя жизнь</p>
               </figcaption>
               <img class="advantages__photo" src="img/content/town.jpg" alt="Вид городка Седона." width="320" height="260">
             </figure>
@@ -81,14 +81,14 @@
             </li>
           </ul>
 
-          <li class="advantages__item advantages__item--background">
+          <li class="advantages__item advantages__item--background advantages__item--reverse">
             <figure class="advantages__figure figure">
-              <figcaption>
+              <figcaption class="advantages__figcaption figcaption">
                 <h2 class="advantages__title">Там есть мост дьявола</h2>
                 <span class="advantages-number">— №2 —</span>
-                <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                <p class="advantages__description">Да, по нему можно пройти!<br>Если вы осмелитесь, конечно</p>
               </figcaption>
-              <img class="advantages__photo" src="img/content/bridge.jpg" alt="Виды на мост Дьявола." width="320" height="260">
+              <img class="advantages__photo advantages__photo--reverse" src="img/content/bridge.jpg" alt="Виды на мост Дьявола." width="320" height="260">
             </figure>
           </li>
 
@@ -152,6 +152,9 @@
       </a>
     </footer>
   </div>
+
+  <script src="js/script.js"></script>
+
 
 </body>
 
