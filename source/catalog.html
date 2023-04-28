@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <link rel="shortcut icon" href="img/favicon/favicon.png" sizes="32x32" type="image/png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="img/favicon/apple.png">
+  <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
 </head>
@@ -15,9 +19,12 @@
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/icons/logo.svg" width="185" height="96" alt="HTML Academy: Седона.">
       </a>
-      <nav class="page-header__navigation navigation navigation--closed navigation--opened navigation--nojs">
+      <nav class="page-header__navigation navigation">
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть/закрыть меню.</span>
+          <span class="navigation__toggle-line"></span>
+          <span class="navigation__toggle-line"></span>
+          <span class="navigation__toggle-line"></span>
         </button>
         <ul class="navigation__list">
           <li class="navigation__item">
@@ -51,52 +58,64 @@
 
         <ul class="catalog__list">
           <li class="catalog__item catalog__item--full">
-            <figure class="catalog__figure figure">
+            <figure class="catalog__figure">
               <a class="catalog__link" href="#">
                 <img class="catalog__image" src="img/content/spaces.jpg" alt="Неродные просторы." width="280" height="280">
               </a>
-              <figcaption class="catalog__figcaption figcaption">
+              <figcaption class="catalog__figcaption">
                 <h3 class="catalog__title">Неродные просторы</h3>
                 <p class="catalog__author">Автор фото: Борис</p>
+                <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="currentColor"/>
+                </svg>
                 <span class="catalog__likes">1350</span>
               </figcaption>
             </figure>
           </li>
 
           <li class="catalog__item">
-            <figure class="catalog__figure figure">
+            <figure class="catalog__figure">
               <a class="catalog__link" href="#">
                 <img class="catalog__image" src="img/content/green.jpg" alt="Местная растительность." width="280" height="280">
               </a>
-              <figcaption class="catalog__figcaption figcaption">
+              <figcaption class="catalog__figcaption">
                 <h3 class="catalog__title">Местная растительность</h3>
                 <p class="catalog__author">Автор фото: Сергей</p>
+                <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="currentColor"/>
+                </svg>
                 <span class="catalog__likes">143</span>
               </figcaption>
             </figure>
           </li>
 
           <li class="catalog__item">
-            <figure class="catalog__figure figure">
+            <figure class="catalog__figure">
               <a class="catalog__link" href="#">
                 <img class="catalog__image" src="img/content/road.jpg" alt="Дорога на север." width="280" height="280">
               </a>
-              <figcaption class="catalog__figcaption figcaption">
+              <figcaption class="catalog__figcaption">
                 <h3 class="catalog__title">Дорога на север</h3>
                 <p class="catalog__author">Автор фото: Петр</p>
+                <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="currentColor"/>
+                </svg>
                 <span class="catalog__likes">96</span>
               </figcaption>
             </figure>
           </li>
 
           <li class="catalog__item">
-            <figure class="catalog__figure figure">
+            <figure class="catalog__figure">
               <a class="catalog__link" href="#">
                 <img class="catalog__image" src="img/content/bridge-catalog.jpg" alt="Мост Дьявола." width="280" height="280">
               </a>
-              <figcaption class="catalog__figcaption figcaption">
+              <figcaption class="catalog__figcaption">
                 <h3 class="catalog__title">Мост Дьявола</h3>
                 <p class="catalog__author">Автор фото: Антон</p>
+                <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="currentColor"/>
+                </svg>
                 <span class="catalog__likes">254</span>
               </figcaption>
             </figure>

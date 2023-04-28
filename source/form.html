@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <link rel="shortcut icon" href="img/favicon/favicon.png" sizes="32x32" type="image/png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="img/favicon/apple.png">
+  <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
 </head>
@@ -16,9 +20,12 @@
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/icons/logo.svg" width="185" height="96" alt="HTML Academy: Седона.">
       </a>
-      <nav class="page-header__navigation navigation navigation--closed navigation--opened navigation--nojs">
+      <nav class="page-header__navigation navigation">
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть/закрыть меню.</span>
+          <span class="navigation__toggle-line"></span>
+          <span class="navigation__toggle-line"></span>
+          <span class="navigation__toggle-line"></span>
         </button>
         <ul class="navigation__list">
           <li class="navigation__item">
@@ -90,21 +97,24 @@
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
                 <label class="feedback-form__label feedback-form__label--general radio">
-                  <input class="radio__input" type="radio" name="Общее впечатление:" value="Скорее положительное" checked>
+                  <input class="radio__input visually-hidden" type="radio" name="Общее впечатление:" value="Скорее положительное" checked>
+                  <span class="radio__control"></span>
                   <span class="radio__name">Скорее положительное</span>
                 </label>
               </li>
 
               <li class="feedback-form__item">
                 <label class="feedback-form__label feedback-form__label--general radio">
-                  <input class="radio__input" type="radio" name="Общее впечатление:" value="Скорее отрицательное">
+                  <input class="radio__input visually-hidden" type="radio" name="Общее впечатление:" value="Скорее отрицательное">
+                  <span class="radio__control"></span>
                   <span class="radio__name">Скорее отрицательное</span>
                 </label>
               </li>
 
               <li class="feedback-form__item">
                 <label class="feedback-form__label feedback-form__label--general radio">
-                  <input class="radio__input" type="radio" name="Общее впечатление:" value="Затрудняюсь ответить">
+                  <input class="radio__input visually-hidden" type="radio" name="Общее впечатление:" value="Затрудняюсь ответить">
+                  <span class="radio__control"></span>
                   <span class="radio__name">Затрудняюсь ответить</span>
                 </label>
               </li>
@@ -116,25 +126,29 @@
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
                 <label class="feedback-form__label checkbox">
-                  <input class="checkbox__input" type="checkbox" name="Достопримечательности:" value="Мост Дьявола" checked>
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="Достопримечательности:" value="Мост Дьявола" checked>
+                  <span class="checkbox__control"></span>
                   <span class="checkbox__name">Мост Дьявола</span>
                 </label>
               </li>
               <li class="feedback-form__item">
                 <label class="feedback-form__label checkbox">
-                  <input class="checkbox__input" type="checkbox" name="Достопримечательности:" value="Гора-Колокол" checked>
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="Достопримечательности:" value="Гора-Колокол" checked>
+                  <span class="checkbox__control"></span>
                   <span class="checkbox__name">Гора-Колокол</span>
                 </label>
               </li>
               <li class="feedback-form__item">
                 <label class="feedback-form__label checkbox">
-                  <input class="checkbox__input" type="checkbox" name="Достопримечательности:" value="Слайд-парк" checked>
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="Достопримечательности:" value="Слайд-парк" checked>
+                  <span class="checkbox__control"></span>
                   <span class="checkbox__name">Слайд-парк</span>
                 </label>
               </li>
               <li class="feedback-form__item">
                 <label class="feedback-form__label checkbox">
-                  <input class="checkbox__input" type="checkbox" name="Достопримечательности:" value="Красные скалы">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="Достопримечательности:" value="Красные скалы">
+                  <span class="checkbox__control"></span>
                   <span class="checkbox__name">Красные скалы</span>
                 </label>
               </li>

@@ -1,15 +1,12 @@
 .page-header {
   text-transform: uppercase;
   color: $black;
-  background-color: $blue;
-
-  @media (min-width: $tablet-width) {
-    background-color: $white;
-  }
+  background-color: $white;
+  min-height: 56px;
 }
 
 .page-header__logo {
-  z-index: 3;
+  z-index: 10;
   position: absolute;
   width: 185px;
   left: 50%;
@@ -21,5 +18,14 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  .no-js &,
+  .is-open & {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
   }
 }

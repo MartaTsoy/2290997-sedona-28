@@ -1,6 +1,4 @@
 .catalog {
-  padding: 0 20px;
-
   @media (min-width: $tablet-width) {
     padding: 0 60px;
   }
@@ -10,11 +8,11 @@
   padding: 37px 20px 25px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 66px 155px;
+    padding: 66px 115px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 360px 69px 360px;
+    padding: 100px 340px 69px 340px;
   }
 }
 
@@ -30,8 +28,21 @@
 }
 
 .catalog__item {
+  padding: 20px 25px;
+  border-top: 1px solid $grey-devider-catalog;
+
+  &:last-child {
+    border-bottom: 1px solid $grey-devider-catalog;
+  }
+
   @media (min-width: $tablet-width) {
+    padding: 0;
     width: 50%;
+    border: none;
+
+    &:last-child {
+      border-bottom: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -39,17 +50,55 @@
   }
 }
 
+.catalog__figure {
+  margin: 0;
+}
+
+.catalog__image {
+  margin: 0;
+  margin-bottom: 15px;
+  width: 100%;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
 .catalog__item--full {
   width: 100%;
+
+  .catalog__figcaption {
+    @media (min-width: $tablet-width) {
+      padding: 16px 20px 15px 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 22px 20px 15px 21px;
+      margin-top: -117px;
+    }
+  }
 }
 
 .catalog__link {
   display: flex;
 }
 
-.catalog__image {
-  width: 100%;
-  height: auto;
+.catalog__figcaption {
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    background-color: $grey;
+    padding: 22px 21px 15px 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+    width: 100%;
+    padding: 17px 20px 17px 25px;
+    margin-top: -113px;
+    z-index: 3;
+  }
 }
 
 .catalog__title {
@@ -58,6 +107,10 @@
   line-height: 21px;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
 }
 
 .catalog__author {
@@ -67,6 +120,10 @@
   color: $dark-grey;
   margin: 0;
   margin-bottom: 11px;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
 }
 
 .catalog__likes {
@@ -74,14 +131,10 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
-  margin-left: 37px;
+  margin-left: 14px;
 
-  &::before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/icons/like.svg");
-    width: 23px;
-    height: 21px;
-    left: -37px;
+  @media (min-width: $desktop-width) {
+    color: $white;
+    margin-left: 9px;
   }
 }

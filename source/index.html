@@ -5,19 +5,26 @@
   <meta charset="utf-8">
   <link rel="shortcut icon" href="img/favicon/favicon.png" sizes="32x32" type="image/png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="img/favicon/apple.png">
+  <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
 </head>
 
 <body class="page__body">
   <div class="page__wrapper">
-    <header class="page-header">
+    <header class="page-header no-js">
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/icons/logo.svg" width="185" height="96" alt="HTML Academy: Седона.">
       </a>
-      <nav class="page-header__navigation navigation navigation--closed navigation--opened navigation--nojs">
+      <nav class="page-header__navigation navigation">
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть/закрыть меню.</span>
+          <span class="navigation__toggle-line"></span>
+          <span class="navigation__toggle-line"></span>
+          <span class="navigation__toggle-line"></span>
         </button>
         <ul class="navigation__list">
           <li class="navigation__item navigation__item--current">
@@ -53,60 +60,58 @@
         </div>
 
         <ul class="advantages__list">
-          <li class="advantages__item advantages__item--background">
+          <li class="advantages__item advantages__item--figure">
             <figure class="advantages__figure figure">
-              <figcaption class="advantages__figcaption figcaption">
+              <figcaption class="figure__description  figure__description--decor">
                 <h2 class="advantages__title">Настоящий городок</h2>
-                <span class="advantages-number">— №1 —</span>
+                <span class="advantages__number">— №1 —</span>
                 <p class="advantages__description">Седона не аттракцион для туристов, <br> там течет своя жизнь</p>
               </figcaption>
-              <img class="advantages__photo" src="img/content/town.jpg" alt="Вид городка Седона." width="320" height="260">
+              <img class="figure__photo" src="img/content/town.jpg" alt="Вид городка Седона." width="320" height="260">
             </figure>
           </li>
 
-          <ul class="advantages__list--features">
-            <li class="advantages__item advantages__item--features advantages__item--live">
-              <h2 class="advantages__title">Жилье</h2>
-              <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-            </li>
+          <li class="advantages__item advantages__item--features advantages__item--live">
+            <h2 class="advantages__title">Жилье</h2>
+            <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
 
-            <li class="advantages__item advantages__item--features advantages__item--food">
-              <h2 class="advantages__title">Еда</h2>
-              <p class="advantages__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
-            </li>
+          <li class="advantages__item advantages__item--features advantages__item--food">
+            <h2 class="advantages__title">Еда</h2>
+            <p class="advantages__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+          </li>
 
-            <li class="advantages__item advantages__item--features advantages__item--souvenirs">
-              <h2 class="advantages__title">Сувениры</h2>
-              <p class="advantages__description">Не только китайского, но и местного производства!</p>
-            </li>
-          </ul>
+          <li class="advantages__item advantages__item--features advantages__item--souvenirs">
+            <h2 class="advantages__title">Сувениры</h2>
+            <p class="advantages__description">Не только китайского, но и местного производства!</p>
+          </li>
 
-          <li class="advantages__item advantages__item--background advantages__item--reverse">
-            <figure class="advantages__figure figure">
-              <figcaption class="advantages__figcaption figcaption">
+          <li class="advantages__item advantages__item--figure">
+            <figure class="advantages__figure figure figure--reverse">
+              <figcaption class="figure__description">
                 <h2 class="advantages__title">Там есть мост дьявола</h2>
-                <span class="advantages-number">— №2 —</span>
+                <span class="advantages__number">— №2 —</span>
                 <p class="advantages__description">Да, по нему можно пройти!<br>Если вы осмелитесь, конечно</p>
               </figcaption>
-              <img class="advantages__photo advantages__photo--reverse" src="img/content/bridge.jpg" alt="Виды на мост Дьявола." width="320" height="260">
+              <img class="figure__photo" src="img/content/bridge.jpg" alt="Виды на мост Дьявола." width="320" height="260">
             </figure>
           </li>
 
           <li class="advantages__item">
             <h2 class="advantages__title">Небольшая площадь</h2>
-            <span class="advantages-number">— №3 —</span>
+            <span class="advantages__number">— №3 —</span>
             <p class="advantages__description">Все интересные места находятся очень близко</p>
           </li>
 
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--devider">
             <h2 class="advantages__title">Красивая дорога</h2>
-            <span class="advantages-number">— №4 —</span>
+            <span class="advantages__number">— №4 —</span>
             <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
 
           <li class="advantages__item">
             <h2 class="advantages__title">Мало туристов</h2>
-            <span class="advantages-number">— №5 —</span>
+            <span class="advantages__number">— №5 —</span>
             <p class="advantages__description">Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ul>
