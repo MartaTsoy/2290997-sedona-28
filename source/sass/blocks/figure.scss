@@ -1,0 +1,39 @@
+.figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  &--reverse {
+    @media (min-width: $tablet-width) {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.figure__description {
+  padding: 50px 70px;
+  background-color: $blue;
+
+  @media (min-width: $tablet-width) {
+    width: 33.33%;
+  }
+
+  &--decor {
+    clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
+
+    @media (min-width: $tablet-width) {
+      clip-path: unset;
+    }
+  }
+}
+
+.figure__photo {
+  @media (min-width: $tablet-width) {
+    width: 66.67%;
+    height: auto;
+  }
+}

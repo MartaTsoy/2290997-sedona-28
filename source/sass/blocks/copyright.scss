@@ -3,6 +3,14 @@
   text-decoration: none;
   color: inherit;
   align-items: center;
+
+  &:hover {
+    color: $blue;
+  }
+
+  &:active {
+    color: $grey-active;
+  }
 }
 
 .copyright__text {

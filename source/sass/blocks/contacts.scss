@@ -20,4 +20,17 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+
+  &--picture {
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+  }
+
+  &--telephone {
+    background-image: url("../img/icons/phone.svg");
+  }
+
+  &--email {
+    background-image: url("../img/icons/mail.svg");
+  }
 }

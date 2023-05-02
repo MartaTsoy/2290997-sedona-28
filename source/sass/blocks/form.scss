@@ -7,13 +7,14 @@
 }
 
 .form__header {
-  padding: 36px 20px 28px 20px;
+  padding-top: 36px;
+  padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
-    padding: 64px 166px 108px 166px;
+    padding: 64px 146px 108px 146px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 115px 380px 68px 380px;
+    padding: 115px 350px 68px 350px;
   }
 }

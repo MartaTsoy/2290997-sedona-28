@@ -1,24 +1,65 @@
+.navigation {
+  position: absolute;
+  width: 100%;
+  min-width: 320px;
+  background-color: $white;
+  z-index: 5;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+
+  .no-js & {
+    position: relative;
+  }
+}
+
 .navigation__list {
-  display: flex;
+  display: none;
   flex-direction: column;
   list-style: none;
   margin: 0;
   padding: 0;
-  align-items: center;
   text-align: center;
+  background-color: $blue;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  .no-js & {
+    display: flex;
+  }
+
+  .is-open & {
+    display: flex;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: $white;
   }
 }
 
 .navigation__item {
-  padding-top: 18px;
-  padding-bottom: 12px;
+  box-shadow: 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+  &:last-child {
+    box-shadow: 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -7px 7px 0 rgba(1, 1, 1, 0.2);
+  }
 
   @media (min-width: $tablet-width) {
     width: 20%;
+    box-shadow: none;
+
+    &:last-child {
+      box-shadow: none;
+    }
 
     &--current {
       .navigation__link {
@@ -32,10 +73,6 @@
       margin: 0 0 0 20%;
     }
   }
-
-  @media (min-width: $tablet-width) {
-    padding: 18px 25px;
-  }
 }
 
 .navigation__link {
@@ -46,11 +83,24 @@
   font-size: 18px;
   line-height: 26px;
   text-decoration: none;
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     color: $black;
     font-size: 14px;
     line-height: 21px;
+    padding-top: 18px;
+    padding-bottom: 17px;
+
+    &:hover {
+      color: $blue;
+    }
+
+    &:active {
+      color: rgb(0, 0, 0, 0.3);
+    }
   }
 }
 
@@ -60,3 +110,50 @@
   }
 }
 
+.navigation__toggle {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  z-index: 2;
+  width: 23px;
+  height: 22px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
+  .no-js & {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.navigation__toggle-line {
+  width: 23px;
+  height: 4px;
+  background-color: $blue;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  .is-open & {
+    background-color: $white;
+    width: 29px;
+
+    &:nth-child(2) {
+      transform: translate(-2px, 9px) rotate(45deg);
+    }
+
+    &:nth-child(3) {
+      transform: scaleX(0);
+    }
+
+    &:nth-child(4) {
+      transform: translate(-2px, -9px) rotate(-45deg);
+    }
+  }
+}

@@ -4,11 +4,19 @@
   align-items: center;
   margin-top: auto;
   flex-direction: column;
+  padding: 33px 82px;
+
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    min-height: 120px;
+    padding: 36px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 36px 120px;
   }
 }
 
@@ -19,4 +27,10 @@
   display: flex;
   justify-content: center;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }

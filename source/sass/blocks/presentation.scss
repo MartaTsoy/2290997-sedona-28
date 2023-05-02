@@ -4,21 +4,39 @@
 
 .presentation__header {
   padding: 17px 27px 38px 27px;
+
+  @media (min-width: $tablet-width) {
+    padding: 58px 160px 66px 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 62px 370px 64px 370px;
+  }
 }
 
 .presentation__title {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .presentation__description {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 18px;
+  line-height: 26px;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
