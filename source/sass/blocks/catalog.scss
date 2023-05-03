@@ -85,7 +85,7 @@
 
   .catalog__figure {
     @media (min-width: $desktop-width) {
-      padding-top: 320px;
+      padding-top: 280px;
     }
   }
 }
@@ -143,6 +143,10 @@
   margin: 0;
   margin-bottom: 11px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
   @media (min-width: $desktop-width) {
     color: $white;
   }
@@ -167,4 +171,11 @@
     color: $white;
     margin-left: 9px;
   }
+}
+
+.catalog__picture {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }

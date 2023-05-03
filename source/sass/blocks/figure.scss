@@ -32,8 +32,6 @@
 }
 
 .figure__photo {
-  @media (min-width: $tablet-width) {
-    width: 66.67%;
-    height: auto;
-  }
+  width: 100%;
+  height: auto;
 }

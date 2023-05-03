@@ -60,7 +60,14 @@
           <li class="catalog__item catalog__item--full">
             <figure class="catalog__figure">
               <a class="catalog__link" href="#">
-                <img class="catalog__image" src="img/content/spaces.jpg" alt="Неродные просторы." width="280" height="280">
+                <picture class="catalog__picture">
+                  <source media="(min-width: 1200px)"
+                  srcset="img/content/spaces-desktop.jpg 1x, img/content/spaces-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                  srcset="img/content/spaces-tablet.jpg 1x, img/content/spaces-tablet@2x.jpg 2x">
+                  <img class="catalog__image" src="img/content/spaces.jpg"
+                  srcset="img/content/spaces@2x.jpg 2x" alt="Неродные просторы." width="280" height="280">
+                </picture>
               </a>
               <figcaption class="catalog__figcaption">
                 <div class="catalog__autor-wrapper">
@@ -80,7 +87,14 @@
           <li class="catalog__item">
             <figure class="catalog__figure">
               <a class="catalog__link" href="#">
-                <img class="catalog__image" src="img/content/green.jpg" alt="Местная растительность." width="280" height="280">
+                <picture class="catalog__picture">
+                  <source media="(min-width: 1200px)"
+                  srcset="img/content/green-desktop.jpg 1x, img/content/green-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                  srcset="img/content/green-tablet.jpg 1x, img/content/green-tablet@2x.jpg 2x">
+                  <img class="catalog__image" src="img/content/green.jpg"
+                  srcset="img/content/green@2x.jpg 2x" alt="Местная растительность." width="280" height="280">
+                </picture>
               </a>
               <figcaption class="catalog__figcaption">
                 <div class="catalog__autor-wrapper">
@@ -100,7 +114,14 @@
           <li class="catalog__item">
             <figure class="catalog__figure">
               <a class="catalog__link" href="#">
-                <img class="catalog__image" src="img/content/road.jpg" alt="Дорога на север." width="280" height="280">
+                <picture class="catalog__picture">
+                  <source media="(min-width: 1200px)"
+                  srcset="img/content/road-desktop.jpg 1x, img/content/road-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                  srcset="img/content/road-tablet.jpg 1x, img/content/road-tablet@2x.jpg 2x">
+                  <img class="catalog__image" src="img/content/road.jpg"
+                  srcset="img/content/road@2x.jpg 2x" alt="Дорога на север." width="280" height="280">
+                </picture>
               </a>
               <figcaption class="catalog__figcaption">
                 <div class="catalog__autor-wrapper">
@@ -120,7 +141,14 @@
           <li class="catalog__item">
             <figure class="catalog__figure">
               <a class="catalog__link" href="#">
-                <img class="catalog__image" src="img/content/bridge-catalog.jpg" alt="Мост Дьявола." width="280" height="280">
+                <picture class="catalog__picture">
+                  <source media="(min-width: 1200px)"
+                  srcset="img/content/bridge-desktop.jpg 1x, img/content/bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                  srcset="img/content/bridge-tablet.jpg 1x, img/content/bridge-tablet@2x.jpg 2x">
+                  <img class="catalog__image" src="img/content/bridge.jpg"
+                  srcset="img/content/bridge@2x.jpg 2x" alt="Мост Дьявола." width="280" height="280">
+                </picture>
               </a>
               <figcaption class="catalog__figcaption">
                 <div class="catalog__autor-wrapper">
@@ -148,7 +176,15 @@
         </div>
         <div class="presentation__player">
           <a href="https://youtu.be/-pjw1_GucsA">
-            <img src="img/content/presentation.jpg" alt="Видео-презентация.">
+            <picture class="presentation__picture">
+              <source media="(min-width: 1200px)"
+              srcset="img/content/presentation-desktop.jpg 1x, img/content/presentation-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+              srcset="img/content/presentation-tablet.jpg 1x, img/content/presentation-tablet@2x.jpg 2x">
+              <img src="img/content/presentation.jpg"
+              srcset="img/content/presentation@2x.jpg 2x" alt="Видео-презентация." width="280" height="177">
+            </picture>
+
           </a>
         </div>
       </section>
