@@ -67,7 +67,16 @@
                 <span class="advantages__number">— №1 —</span>
                 <p class="advantages__description">Седона не аттракцион для туристов, <br> там течет своя жизнь</p>
               </figcaption>
-              <img class="figure__photo" src="img/content/town.jpg" alt="Вид городка Седона." width="320" height="260">
+
+              <picture class="advantages__picture">
+                <source media="(min-width: 1200px)"
+                srcset="img/content/town-decktop.jpg 1x, img/content/town-decktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                srcset="img/content/town-tablet.jpg 1x, img/content/town-tablet@2x.jpg 2x">
+                <img class="figure__photo" src="img/content/town.jpg"
+                srcset="img/content/town@2x.jpg 2x" alt="Вид городка Седона." width="320" height="260">
+              </picture>
+
             </figure>
           </li>
 
@@ -93,7 +102,16 @@
                 <span class="advantages__number">— №2 —</span>
                 <p class="advantages__description">Да, по нему можно пройти!<br>Если вы осмелитесь, конечно</p>
               </figcaption>
-              <img class="figure__photo" src="img/content/bridge.jpg" alt="Виды на мост Дьявола." width="320" height="260">
+
+              <picture class="advantages__picture">
+                <source media="(min-width: 1200px)"
+                srcset="img/content/adv-bridge-decktop.jpg 1x, img/content/adv-bridge-decktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                srcset="img/content/adv-bridge-tablet.jpg 1x, img/content/adv-bridge-tablet@2x.jpg 2x">
+                <img class="figure__photo" src="img/content/adv-bridge.jpg"
+                srcset="img/content/adv-bridge@2x.jpg 2x" alt="Виды на мост Дьявола." width="320" height="260">
+              </picture>
+
             </figure>
           </li>
 
@@ -126,7 +144,8 @@
 
       <section class="maps">
         <h2 class="visually-hidden">Седона на карте.</h2>
-        <img src="img/content/map.jpg" alt="Седона на карте.">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A78ff553820b8da9c020aa7aab570fa9807d2cd5a77436a6db15232441065acac&amp;source=constructor" width="100%" height="350" frameborder="0">
+        </iframe>
       </section>
     </main>
 
