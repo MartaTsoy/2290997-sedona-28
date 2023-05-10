@@ -14,13 +14,13 @@
   position: relative;
 
   @media (max-width: $tablet-width) {
-    ::before {
+    &::before {
       position: absolute;
       content: "";
       height: 1px;
       width: calc(100% + 40px);
       background-color: $grey-devider-catalog;
-      top: -24px;
+      top: -69px;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -129,15 +129,6 @@
   padding: 0;
   list-style-type: none;
 
-  @media (max-width: $tablet-width) {
-    :last-child {
-      .radio,
-      .checkbox {
-        padding-bottom: 0;
-      }
-    }
-  }
-
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -168,6 +159,7 @@
   background-color: $grey;
   border: none;
   font-weight: 700;
+  font-family: inherit;
   font-size: 18px;
   line-height: 26px;
   color: rgba(0, 0, 0, 0.3);
@@ -181,11 +173,11 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    width: 324px;
+    max-width: 324px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 384px;
+    max-width: 384px;
   }
 }
 

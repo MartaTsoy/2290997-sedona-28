@@ -34,3 +34,11 @@
   margin: 0;
   margin-bottom: 32px;
 }
+
+.search__button {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    max-width: 458px;
+  }
+}
