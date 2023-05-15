@@ -47,7 +47,13 @@
       <h1 class="visually-hidden">Седона. Форма отзыва.</h1>
       <section class="intro intro--secondary">
         <h2 class="visually-hidden">Welcome to Sedona!</h2>
-        <img class="intro__image" src="img/content/sedona.svg" alt="Welcome to Sedona!" width="229" height="39">
+
+        <picture class="intro__picture">
+          <source media="(min-width: 768px)"
+          srcset="img/content/sedona-tablet.svg 1x, img/content/sedona-tablet@2x.svg 2x" width="457" height="78">
+          <img class="intro__image" src="img/content/sedona.svg" alt="Welcome to Sedona!" width="229" height="39"
+          srcset="img/content/sedona@2x.svg 2x">
+        </picture>
       </section>
 
       <section class="catalog">

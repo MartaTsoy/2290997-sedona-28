@@ -49,12 +49,18 @@
 
       <section class="intro">
         <h2 class="visually-hidden">Welcome to Sedona!</h2>
-        <img class="intro__image" src="img/content/welcome.svg" alt="Welcome to Sedona!" width="282" height="214">
+
+        <picture class="intro__picture">
+          <source media="(min-width: 768px)"
+          srcset="img/content/welcome-tablet.svg 1x, img/content/welcome-tablet@2x.svg 2x" width="461" height="350">
+          <img class="intro__image" src="img/content/welcome.svg" alt="Welcome to Sedona!" width="282" height="214"
+          srcset="img/content/welcome@2x.svg 2x">
+        </picture>
       </section>
 
       <section class="advantages">
         <div class="advantages__header heading">
-          <h2 class="heading__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <h2 class="heading__title">Седона — небольшой городок в Аризоне,</br>заслуживающий большего!</h2>
           <p class="heading__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
           </p>
         </div>
