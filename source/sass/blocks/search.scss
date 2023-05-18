@@ -18,10 +18,17 @@
   line-height: 26px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
   }
 }
 
@@ -33,6 +40,11 @@
   color: $dark-grey;
   margin: 0;
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
 
 .search__button {

@@ -3,7 +3,7 @@
 }
 
 .advantages__header {
-  padding: 32px 18px;
+  padding: 35px 18px;
 
   @media (min-width: $tablet-width) {
     padding: 48px 124px 56px 124px;
@@ -42,6 +42,10 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .advantages__number {
@@ -65,7 +69,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 41px 33px;
+    padding: 52px 35px 31px 35px;
     width: 33.33%;
   }
 
@@ -113,7 +117,7 @@
       content: "";
       background-repeat: no-repeat;
       top: -7px;
-      left: 15px;
+      left: 16px;
       width: 40px;
       height: 40px;
 
@@ -130,7 +134,7 @@
   }
 
   &--live {
-    padding-top: 23px;
+    padding-top: 31px;
 
     @media (min-width: $tablet-width) {
       padding-top: 155px;
@@ -151,6 +155,8 @@
 
     @media (min-width: $tablet-width) {
       top: 69px;
+      width: 77px;
+      height: 72px;
     }
   }
 
@@ -160,8 +166,6 @@
 
   &--souvenirs::before {
     background-image: url("../img/icons/gift.svg");
-    width: 32px;
-    height: 38px;
   }
 
   &--devider::before {
