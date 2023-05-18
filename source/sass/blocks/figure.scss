@@ -15,17 +15,19 @@
 }
 
 .figure__description {
-  padding: 50px 70px;
+  padding: 38px 20px 36px 20px;
   background-color: $blue;
 
   @media (min-width: $tablet-width) {
-    width: 33.33%;
+    padding: 52px 35px 31px 35px;
   }
 
   &--decor {
-    clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
+    padding: 50px 20px 40px 20px;
+    clip-path: polygon(50% 7%, 100% 0, 100% 100%, 0 100%, 0 0);
 
     @media (min-width: $tablet-width) {
+      padding: 52px 37px 31px 37px;
       clip-path: unset;
     }
   }

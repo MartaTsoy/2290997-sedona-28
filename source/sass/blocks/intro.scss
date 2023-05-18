@@ -5,7 +5,7 @@
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 90px 19px 85px 19px;
+  padding: 90px 19px 79px 19px;
   text-align: center;
   position: relative;
 
@@ -15,7 +15,7 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/backgrounds/intro-desktop.jpg");
-    padding: 77px 150px 91px 150px;
+    padding: 77px 150px 84px 150px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/backgrounds/intro-desktop@2x.jpg");
@@ -23,11 +23,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 81px 46px 90px 46px;
+    padding: 79px 46px 83px 46px;
   }
 
   &--secondary {
-    padding: 52px 46px 67px 46px;
+    padding: 52px 46px 62px 46px;
     background-position: 50% 100%;
 
     @media (min-width: $tablet-width) {
@@ -35,7 +35,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 101px 46px 120px 46px;
+      padding: 101px 46px 116px 46px;
     }
   }
 
