@@ -2,7 +2,7 @@
   margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 64px;
+    margin-bottom: 69px;
   }
 }
 
@@ -13,65 +13,103 @@
   padding: 0;
   position: relative;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-only) {
     &::before {
       position: absolute;
       content: "";
       height: 1px;
       width: calc(100% + 40px);
       background-color: $grey-devider-catalog;
-      top: -69px;
       left: 50%;
       transform: translateX(-50%);
     }
   }
 
   &--representative {
-    @media (max-width: $tablet-width) {
-      margin-bottom: 64px;
+    @media (max-width: $mobile-only) {
+      margin-bottom: 70px;
       margin-top: 24px;
+
+      &::before {
+        top: -72px;
+      }
     }
   }
 
   &--contacts {
-    @media (max-width: $tablet-width) {
-      margin-bottom: 59px;
+    @media (max-width: $mobile-only) {
+      margin-bottom: 64px;
+
+      &::before {
+        top: -72px;
+      }
     }
   }
 
   &--general {
-    margin-bottom: 49px;
+    margin-bottom: 59px;
+
+    &::before {
+      top: -82px;
+    }
 
     @media (min-width: $tablet-width) {
       border-top: 1px solid $grey-devider;
-      margin-bottom: 48px;
+      margin-bottom: 58px;
 
       .feedback-form__legend {
         padding-right: 65px;
         padding-left: 65px;
+        margin-bottom: 40px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 48px;
+
+      .feedback-form__legend {
+        margin-bottom: 55px;
       }
     }
   }
 
   &--attractions {
-    margin-bottom: 49px;
+    margin-bottom: 62px;
+
+    &::before {
+      top: -105px;
+    }
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 42px;
+      margin-bottom: 16px;
       border-top: 1px solid $grey-devider;
 
       .feedback-form__legend {
-        padding-right: 65px;
-        padding-left: 65px;
+        padding-right: 63px;
+        padding-left: 63px;
+        margin-bottom: 39px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 62px;
+
+      .feedback-form__legend {
+        margin-bottom: 70px;
       }
     }
   }
 
   &--emotions {
-    margin-bottom: 56px;
+    margin-bottom: 48px;
+
+    &::before {
+      top: -73px;
+    }
 
     @media (min-width: $tablet-width) {
       border-top: 1px solid $grey-devider;
+      margin-bottom: 42px;
 
       .feedback-form__legend {
         padding-right: 65px;
@@ -87,7 +125,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 58px;
     position: relative;
-    margin-bottom: 63px;
+    margin-bottom: 68px;
 
     &::before {
       position: absolute;
@@ -102,11 +140,24 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 71px;
+    margin-bottom: 77px;
+    gap: 100px;
+  }
+}
+
+.feedback-form__item {
+  padding-bottom: 35px;
+
+  &--attractions {
+    padding-bottom: 40px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 34px;
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    gap: 100px;
+  &:last-child {
+    padding-bottom: 0;
   }
 }
 
@@ -119,8 +170,17 @@
   margin: 0;
   margin-bottom: 20px;
 
+  &--general {
+    margin-bottom: 30px;
+  }
+
+  &--attractions {
+    margin-bottom: 28px;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 28px;
+    font-size: 21px;
   }
 }
 
@@ -132,26 +192,24 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 32px;
   }
 
   &--general {
     @media (min-width: $tablet-width) {
-      margin-left: 96px;
+      margin-left: 37px;
     }
   }
 
   &--attractions {
     @media (min-width: $tablet-width) {
-      margin-left: 144px;
+      margin-left: 83px;
     }
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 46px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 32px;
+    column-gap: 63px;
   }
 }
 
@@ -164,7 +222,17 @@
   line-height: 26px;
   color: rgba(0, 0, 0, 0.3);
   padding: 16px;
+  padding-bottom: 30px;
   width: 100%;
+  max-width: 768px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 41px;
+  }
+
+  &:hover {
+    background-color: $grey-devider-catalog;
+  }
 }
 
 .feedback-form__button {
@@ -194,4 +262,9 @@
   line-height: 21px;
   text-transform: uppercase;
   color: rgba(51, 51, 51, 0.6);
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    padding-top: 11px;
+  }
 }

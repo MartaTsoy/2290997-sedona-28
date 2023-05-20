@@ -11,12 +11,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    min-height: 120px;
-    padding: 36px 60px;
+    min-height: 110px;
+    padding: 30px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 36px 120px;
+    padding: 30px 120px;
   }
 }
 

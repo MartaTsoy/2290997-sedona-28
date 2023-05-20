@@ -9,6 +9,8 @@
   <link rel="apple-touch-icon" href="img/favicon/apple.png">
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="/source/fonts/ptsans.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="/source/fonts/ptsansbold.woff2" as="font" type="font/woff2">
   <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Седона</title>
 </head>
@@ -67,10 +69,13 @@
             <figure class="catalog__figure">
               <a class="catalog__link" href="#">
                 <picture class="catalog__picture">
-                  <source media="(min-width: 1200px)"
-                  srcset="img/content/spaces-desktop.jpg 1x, img/content/spaces-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)"
-                  srcset="img/content/spaces-tablet.jpg 1x, img/content/spaces-tablet@2x.jpg 2x">
+<!--
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/spaces-decktop.webp 1x, img/content/spaces-decktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/spaces-tablet.webp 1x, img/content/spaces-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/content/spaces.webp 1x, img/content/spaces@2x.webp 2x">
+-->
+                  <source media="(min-width: 1200px)" srcset="img/content/spaces-desktop.jpg 1x, img/content/spaces-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"  srcset="img/content/spaces-tablet.jpg 1x, img/content/spaces-tablet@2x.jpg 2x">
                   <img class="catalog__image" src="img/content/spaces.jpg"
                   srcset="img/content/spaces@2x.jpg 2x" alt="Неродные просторы." width="280" height="280">
                 </picture>
@@ -94,6 +99,11 @@
             <figure class="catalog__figure">
               <a class="catalog__link" href="#">
                 <picture class="catalog__picture">
+<!--
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/green-decktop.webp 1x, img/content/spaces-decktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/content/green-tablet.webp 1x, img/content/spaces-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/green.webp 1x, img/content/green@2x.webp 2x">
+-->
                   <source media="(min-width: 1200px)"
                   srcset="img/content/green-desktop.jpg 1x, img/content/green-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
@@ -121,6 +131,11 @@
             <figure class="catalog__figure">
               <a class="catalog__link" href="#">
                 <picture class="catalog__picture">
+<!--
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/road-decktop.webp 1x, img/content/road-decktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/road-tablet.webp 1x, img/content/road-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/content/road.webp 1x, img/content/road@2x.webp 2x">
+-->
                   <source media="(min-width: 1200px)"
                   srcset="img/content/road-desktop.jpg 1x, img/content/road-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
@@ -148,6 +163,11 @@
             <figure class="catalog__figure">
               <a class="catalog__link" href="#">
                 <picture class="catalog__picture">
+<!--
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/bridge-decktop.webp 1x, img/content/bridge-decktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/bridge-tablet.webp 1x, img/content/bridge-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/content/bridge.webp 1x, img/content/bridge@2x.webp 2x">
+-->
                   <source media="(min-width: 1200px)"
                   srcset="img/content/bridge-desktop.jpg 1x, img/content/bridge-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"

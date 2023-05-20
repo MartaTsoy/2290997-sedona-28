@@ -4,17 +4,29 @@
   @media (min-width: $tablet-width) {
     padding: 0 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 120px;
+  }
 }
 
 .form__header {
-  padding-top: 36px;
+  padding-top: 37px;
   padding-bottom: 28px;
 
+  .heading__title {
+    margin-bottom: 23px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 31px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
-    padding: 64px 146px 108px 146px;
+    padding: 64px 102px 106px 102px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 115px 250px 68px 250px;
+    padding: 115px 260px 68px 260px;
   }
 }

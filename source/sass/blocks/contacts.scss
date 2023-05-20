@@ -20,6 +20,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  margin-bottom: -5px;
 
   &--picture {
     background-repeat: no-repeat;
@@ -32,5 +33,9 @@
 
   &--email {
     background-image: url("../img/icons/mail.svg");
+  }
+
+  &:hover {
+    background-color: $grey-devider-catalog;
   }
 }
