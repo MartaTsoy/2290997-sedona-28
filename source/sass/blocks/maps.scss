@@ -1,10 +1,9 @@
-/* .maps::after {
+.maps::after {
   position: absolute;
   content: "";
-  z-index: 2;
+  z-index: -1;
   left: 0;
   top: 0;
   width: 100%;
   background-image: url("../img/content/map.jpg");
 }
-*/
