@@ -284,8 +284,9 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .advantages__photo {
+
+.advantages__photo {
+  @media (min-width: $tablet-width) {
     position: absolute;
     right: 0;
     top: 0;
