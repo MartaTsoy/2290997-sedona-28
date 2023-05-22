@@ -19,7 +19,15 @@
   background-color: $blue;
 
   @media (min-width: $tablet-width) {
-    padding: 52px 35px 31px 35px;
+    padding: 52px 40px 30px 40px;
+    min-height: 256px;
+    width: calc(100% / 3);
+    flex-shrink: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 52px 88px 51px 88px;
+    min-height: 256px;
   }
 
   &--decor {
@@ -27,7 +35,7 @@
     clip-path: polygon(50% 7%, 100% 0, 100% 100%, 0 100%, 0 0);
 
     @media (min-width: $tablet-width) {
-      padding: 52px 37px 31px 37px;
+      padding: 52px 40px 30px 40px;
       clip-path: unset;
     }
   }

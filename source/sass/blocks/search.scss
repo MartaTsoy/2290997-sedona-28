@@ -1,13 +1,13 @@
 .search {
   text-align: center;
-  padding: 38px 18px 49px 18px;
+  padding: 43px 18px 49px 18px;
 
   @media (min-width: $tablet-width) {
     padding: 60px 155px 55px 155px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 60px 370px 66px 370px;
+    padding: 62px 370px 66px 370px;
   }
 }
 
@@ -21,7 +21,7 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 30px;
     line-height: 26px;
   }
@@ -42,8 +42,9 @@
   margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    font-size: 21px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 45px;
   }
 }
 

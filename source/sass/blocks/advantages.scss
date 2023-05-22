@@ -6,7 +6,7 @@
   padding: 35px 18px;
 
   @media (min-width: $tablet-width) {
-    padding: 48px 124px 56px 124px;
+    padding: 50px 124px 54px 124px;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,12 +26,6 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-
-  &--features {
-    margin: 0;
-    padding: 23px 18px 46px 18px;
-    list-style: none;
-  }
 }
 
 .advantages__title {
@@ -43,14 +37,33 @@
   margin: 0;
   margin-bottom: 11px;
 
+  &--tourist {
+    margin-bottom: 14px;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 21px;
+    margin-bottom: 14px;
+  }
+}
+
+.advantages__break {
+  @media (min-width: $tablet-width) {
+    display: inline;
   }
 }
 
 .advantages__number {
   display: block;
   margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .advantages__description {
@@ -61,6 +74,15 @@
   text-transform: uppercase;
   color: $dark-grey;
   margin: 0;
+
+  &--tourist {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 58px;
+  }
 }
 
 .advantages__item {
@@ -69,12 +91,17 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 52px 35px 31px 35px;
+    padding: 43px 35px 43px 35px;
     width: 33.33%;
   }
 
   @media (min-width: $desktop-width) {
     padding: 52px 50px;
+  }
+
+  &--tourist {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   &--figure {
@@ -94,10 +121,12 @@
     }
   }
 
-  &--features {
+  &--live,
+  &--food,
+  &--souvenirs {
     background-color: $white;
     text-align: left;
-    padding: 0 18px 33px 65px;
+    padding: 0 16px 33px 66px;
 
     .advantages__title {
       margin-bottom: 16px;
@@ -105,21 +134,24 @@
 
     @media (min-width: $tablet-width) {
       text-align: center;
-      padding: 155px 33px 60px 33px;
+      padding: 155px 40px 60px 40px;
+
+      .advantages__title {
+        margin-bottom: 26px;
+      }
     }
 
     @media (min-width: $desktop-width) {
-      padding: 169px 50px 70px 50px;
+      padding: 168px 50px 42px 50px;
     }
 
     &::before {
       position: absolute;
       content: "";
       background-repeat: no-repeat;
-      top: -7px;
+      background-position: center;
+      top: -8px;
       left: 16px;
-      width: 40px;
-      height: 40px;
 
       @media (min-width: $tablet-width) {
         left: 50%;
@@ -136,36 +168,89 @@
   &--live {
     padding-top: 31px;
 
+
     @media (min-width: $tablet-width) {
       padding-top: 155px;
     }
 
-    @media (min-width: $tablet-width) {
-      padding-top: 169px;
+    @media (min-width: $desktop-width) {
+      padding-top: 171px;
     }
   }
 
   &--souvenirs {
     padding-bottom: 46px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 152px;
+      padding-bottom: 46px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 172px;
+      padding-bottom: 0;
+    }
   }
 
   &--live::before {
     background-image: url("../img/icons/house.svg");
     top: 23px;
+    width: 39px;
+    height: 37px;
+    background-size: cover;
 
     @media (min-width: $tablet-width) {
-      top: 69px;
+      top: 58px;
       width: 77px;
       height: 72px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 71px;
     }
   }
 
   &--food::before {
     background-image: url("../img/icons/food.svg");
+    width: 40px;
+    height: 35px;
+
+    @media (min-width: $tablet-width) {
+      width: 81px;
+      height: 68px;
+      background-size: contain;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 70px;
+    }
   }
 
   &--souvenirs::before {
     background-image: url("../img/icons/gift.svg");
+    width: 40px;
+    height: 40px;
+
+    @media (min-width: $tablet-width) {
+      top: 66px;
+      width: 67px;
+      height: 75px;
+      background-size: contain;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 69px;
+    }
+  }
+
+  &--devider {
+    padding-left: 35px;
+    padding-right: 35px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 42px;
+      padding-right: 42px;
+    }
   }
 
   &--devider::before {

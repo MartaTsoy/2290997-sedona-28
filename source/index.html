@@ -9,6 +9,8 @@
   <link rel="apple-touch-icon" href="img/favicon/apple.png">
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Седона</title>
 </head>
@@ -52,7 +54,7 @@
 
         <picture class="intro__picture">
           <source media="(min-width: 768px)"
-          srcset="img/content/welcome-tablet.svg 1x, img/content/welcome-tablet@2x.svg 2x" width="461" height="350">
+          srcset="img/content/welcome-tablet.svg , img/content/welcome-tablet@2x.svg 2x" width="461" height="350">
           <img class="intro__image" src="img/content/welcome.svg" alt="Welcome to Sedona!" width="282" height="214"
           srcset="img/content/welcome@2x.svg 2x">
         </picture>
@@ -69,16 +71,21 @@
           <li class="advantages__item advantages__item--figure">
             <figure class="advantages__figure figure">
               <figcaption class="figure__description  figure__description--decor">
-                <h2 class="advantages__title">Настоящий городок</h2>
+                <h2 class="advantages__title">Настоящий<br hidden class="advantages__break">городок</h2>
                 <span class="advantages__number">— №1 —</span>
                 <p class="advantages__description">Седона не аттракцион для туристов, <br> там течет своя жизнь</p>
               </figcaption>
 
               <picture class="advantages__picture">
+
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/town-desktop.webp, img/content/town-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/content/town-tablet.webp, img/content/town-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/town.webp , img/content/town@2x.webp 2x">
+
                 <source media="(min-width: 1200px)"
-                srcset="img/content/town-decktop.jpg 1x, img/content/town-decktop@2x.jpg 2x">
+                srcset="img/content/town-desktop.jpg , img/content/town-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
-                srcset="img/content/town-tablet.jpg 1x, img/content/town-tablet@2x.jpg 2x">
+                srcset="img/content/town-tablet.jpg , img/content/town-tablet@2x.jpg 2x">
                 <img class="figure__photo" src="img/content/town.jpg"
                 srcset="img/content/town@2x.jpg 2x" alt="Вид городка Седона." width="320" height="260">
               </picture>
@@ -93,32 +100,32 @@
 
           <li class="advantages__item advantages__item--features advantages__item--food">
             <h2 class="advantages__title">Еда</h2>
-            <p class="advantages__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+            <p class="advantages__description">Всегда заказывайте фирменный бургер, Вы&nbsp;не разочаруетесь!</p>
           </li>
 
           <li class="advantages__item advantages__item--features advantages__item--souvenirs">
             <h2 class="advantages__title">Сувениры</h2>
-            <p class="advantages__description">Не только китайского, но и местного производства!</p>
+            <p class="advantages__description">Не только китайского, <br hidden class="advantages__break">но и местного производства!</p>
           </li>
 
           <li class="advantages__item advantages__item--figure">
             <figure class="advantages__figure figure figure--reverse">
               <figcaption class="figure__description">
-                <h2 class="advantages__title">Там есть мост дьявола</h2>
+                <h2 class="advantages__title">Там есть <br hidden class="advantages__break"> мост дьявола</h2>
                 <span class="advantages__number">— №2 —</span>
                 <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </figcaption>
 
               <picture class="advantages__picture">
 
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/main-bridge-decktop.webp 1x, img/content/main-bridge-decktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/content/main-bridge-tablet.webp 1x, img/content/main-bridge-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/content/main-bridge.webp 1x, img/content/main-bridge@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/main-bridge-desktop.webp , img/content/main-bridge-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/content/main-bridge-tablet.webp , img/content/main-bridge-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/main-bridge.webp , img/content/main-bridge@2x.webp 2x">
 
                 <source media="(min-width: 1200px)"
-                srcset="img/content/main-bridge-decktop.jpg 1x, img/content/main-bridge-decktop@2x.jpg 2x">
+                srcset="img/content/main-bridge-desktop.jpg , img/content/main-bridge-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
-                srcset="img/content/main-bridge-tablet.jpg 1x, img/content/main-bridge-tablet@2x.jpg 2x">
+                srcset="img/content/main-bridge-tablet.jpg , img/content/main-bridge-tablet@2x.jpg 2x">
                 <img class="figure__photo" src="img/content/main-bridge.jpg"
                 srcset="img/content/main-bridge@2x.jpg 2x" alt="Виды на мост Дьявола." width="320" height="260">
               </picture>
@@ -127,35 +134,35 @@
           </li>
 
           <li class="advantages__item">
-            <h2 class="advantages__title">Небольшая площадь</h2>
+            <h2 class="advantages__title">Небольшая <br hidden class="advantages__break"> площадь</h2>
             <span class="advantages__number">— №3 —</span>
             <p class="advantages__description">Все интересные места находятся очень близко</p>
           </li>
 
           <li class="advantages__item advantages__item--devider">
-            <h2 class="advantages__title">Красивая дорога</h2>
+            <h2 class="advantages__title">Красивая <br hidden class="advantages__break"> дорога</h2>
             <span class="advantages__number">— №4 —</span>
-            <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
           </li>
 
-          <li class="advantages__item">
-            <h2 class="advantages__title">Мало туристов</h2>
-            <span class="advantages__number">— №5 —</span>
-            <p class="advantages__description">Большинство едет в гранд каньон и толпится там</p>
+          <li class="advantages__item advantages__item--tourist">
+            <h2 class="advantages__title advantages__title--tourist">Мало <br hidden class="advantages__break"> туристов</h2>
+            <span class="advantages__number advantages__number--tourist">— №5 —</span>
+            <p class="advantages__description advantages__description--tourist">Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ul>
       </section>
 
       <section class="search">
         <h2 class="search__title">Заинтересовались?</h2>
-        <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+        <p class="search__description">Укажите предполагаемые даты поездки,<br hidden class="advantages__break">и мы покажем вам лучшие
           предложения гостиниц в седоне</p>
         <a class="search__button button" href="catalog.html">Найти гостиницу</a>
       </section>
 
       <section class="maps">
         <h2 class="visually-hidden">Седона на карте.</h2>
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A78ff553820b8da9c020aa7aab570fa9807d2cd5a77436a6db15232441065acac&amp;source=constructor" width="100%" height="350" frameborder="0">
+        <iframe class="maps__frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3A78ff553820b8da9c020aa7aab570fa9807d2cd5a77436a6db15232441065acac&amp;source=constructor" width="100%" height="350" frameborder="0">
         </iframe>
       </section>
     </main>

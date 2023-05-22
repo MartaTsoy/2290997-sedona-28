@@ -1,0 +1,38 @@
+.maps {
+  height: 350px;
+  position: relative;
+  z-index: 1;
+}
+
+.maps::after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/content/map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/content/map@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/content/map-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/content/map-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/content/map-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/content/map-desktop@2x.jpg");
+    }
+  }
+}

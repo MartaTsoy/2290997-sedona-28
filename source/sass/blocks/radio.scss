@@ -5,13 +5,12 @@
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  padding-bottom: 35px;
-  padding-left: 60px;
+  padding-left: 62px;
 }
 
 .radio__control {
   position: absolute;
-  top: -9px;
+  top: -11px;
   left: 0;
   width: 46px;
   height: 46px;
@@ -25,6 +24,10 @@
 
 .radio:active .radio__control {
   background-color: $grey-devider;
+}
+
+.radio__input:focus + .radio__control {
+  box-shadow: 0 0 0 2px $black;
 }
 
 .radio__input[type="radio"]:checked + .radio__control::before {

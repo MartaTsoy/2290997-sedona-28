@@ -9,6 +9,8 @@
   <link rel="apple-touch-icon" href="img/favicon/apple.png">
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Седона</title>
 </head>
@@ -50,7 +52,7 @@
 
         <picture class="intro__picture">
           <source media="(min-width: 768px)"
-          srcset="img/content/sedona-tablet.svg 1x, img/content/sedona-tablet@2x.svg 2x" width="457" height="78">
+          srcset="img/content/sedona-tablet.svg , img/content/sedona-tablet@2x.svg 2x" width="457" height="78">
           <img class="intro__image" src="img/content/sedona.svg" alt="Welcome to Sedona!" width="229" height="39"
           srcset="img/content/sedona@2x.svg 2x">
         </picture>
@@ -67,10 +69,13 @@
             <figure class="catalog__figure">
               <a class="catalog__link" href="#">
                 <picture class="catalog__picture">
-                  <source media="(min-width: 1200px)"
-                  srcset="img/content/spaces-desktop.jpg 1x, img/content/spaces-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)"
-                  srcset="img/content/spaces-tablet.jpg 1x, img/content/spaces-tablet@2x.jpg 2x">
+
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/spaces-desktop.webp, img/content/spaces-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/spaces-tablet.webp, img/content/spaces-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/content/spaces.webp , img/content/spaces@2x.webp 2x">
+
+                  <source media="(min-width: 1200px)" srcset="img/content/spaces-desktop.jpg , img/content/spaces-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"  srcset="img/content/spaces-tablet.jpg , img/content/spaces-tablet@2x.jpg 2x">
                   <img class="catalog__image" src="img/content/spaces.jpg"
                   srcset="img/content/spaces@2x.jpg 2x" alt="Неродные просторы." width="280" height="280">
                 </picture>
@@ -94,10 +99,15 @@
             <figure class="catalog__figure">
               <a class="catalog__link" href="#">
                 <picture class="catalog__picture">
+
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/green-desktop.webp , img/content/green-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/green-tablet.webp , img/content/green-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/content/green.webp , img/content/green@2x.webp 2x">
+
                   <source media="(min-width: 1200px)"
-                  srcset="img/content/green-desktop.jpg 1x, img/content/green-desktop@2x.jpg 2x">
+                  srcset="img/content/green-desktop.jpg , img/content/green-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
-                  srcset="img/content/green-tablet.jpg 1x, img/content/green-tablet@2x.jpg 2x">
+                  srcset="img/content/green-tablet.jpg , img/content/green-tablet@2x.jpg 2x">
                   <img class="catalog__image" src="img/content/green.jpg"
                   srcset="img/content/green@2x.jpg 2x" alt="Местная растительность." width="280" height="280">
                 </picture>
@@ -121,10 +131,15 @@
             <figure class="catalog__figure">
               <a class="catalog__link" href="#">
                 <picture class="catalog__picture">
+
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/road-desktop.webp , img/content/road-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/road-tablet.webp , img/content/road-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/content/road.webp , img/content/road@2x.webp 2x">
+
                   <source media="(min-width: 1200px)"
-                  srcset="img/content/road-desktop.jpg 1x, img/content/road-desktop@2x.jpg 2x">
+                  srcset="img/content/road-desktop.jpg , img/content/road-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
-                  srcset="img/content/road-tablet.jpg 1x, img/content/road-tablet@2x.jpg 2x">
+                  srcset="img/content/road-tablet.jpg , img/content/road-tablet@2x.jpg 2x">
                   <img class="catalog__image" src="img/content/road.jpg"
                   srcset="img/content/road@2x.jpg 2x" alt="Дорога на север." width="280" height="280">
                 </picture>
@@ -148,10 +163,15 @@
             <figure class="catalog__figure">
               <a class="catalog__link" href="#">
                 <picture class="catalog__picture">
+
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/bridge-desktop.webp , img/content/bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/bridge-tablet.webp , img/content/bridge-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/content/bridge.webp , img/content/bridge@2x.webp 2x">
+
                   <source media="(min-width: 1200px)"
-                  srcset="img/content/bridge-desktop.jpg 1x, img/content/bridge-desktop@2x.jpg 2x">
+                  srcset="img/content/bridge-desktop.jpg , img/content/bridge-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
-                  srcset="img/content/bridge-tablet.jpg 1x, img/content/bridge-tablet@2x.jpg 2x">
+                  srcset="img/content/bridge-tablet.jpg , img/content/bridge-tablet@2x.jpg 2x">
                   <img class="catalog__image" src="img/content/bridge.jpg"
                   srcset="img/content/bridge@2x.jpg 2x" alt="Мост Дьявола." width="280" height="280">
                 </picture>
@@ -184,9 +204,9 @@
           <a class="presentation__link" href="https://youtu.be/-pjw1_GucsA"  target="_blank">
             <picture class="presentation__picture">
               <source media="(min-width: 1200px)"
-              srcset="img/content/presentation-desktop.jpg 1x, img/content/presentation-desktop@2x.jpg 2x">
+              srcset="img/content/presentation-desktop.jpg , img/content/presentation-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
-              srcset="img/content/presentation-tablet.jpg 1x, img/content/presentation-tablet@2x.jpg 2x">
+              srcset="img/content/presentation-tablet.jpg , img/content/presentation-tablet@2x.jpg 2x">
               <img class="presentation__image" src="img/content/presentation.jpg"
               srcset="img/content/presentation@2x.jpg 2x" alt="Видео-презентация." width="280" height="177">
             </picture>
@@ -199,7 +219,7 @@
 
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--secondary">
       <p class="page-footer__hashtag">#visitSEDONA</p>
 
       <ul class="page-footer__social social">
