@@ -13,8 +13,8 @@
   padding: 0;
   position: relative;
 
-  @media (max-width: $mobile-only) {
-    &::before {
+  &::before {
+    @media (max-width: $mobile-only) {
       position: absolute;
       content: "";
       height: 1px;
@@ -210,12 +210,14 @@
 
     @media (min-width: $desktop-width) {
       margin-left: 52px;
+      flex-wrap: wrap;
     }
   }
 
   &--attractions {
     @media (min-width: $tablet-width) {
       margin-left: 83px;
+      flex-wrap: wrap;
     }
 
     @media (min-width: $desktop-width) {
@@ -235,10 +237,13 @@
   padding: 16px;
   padding-bottom: 30px;
   width: 100%;
-  max-width: 768px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 768px;
   }
 
   &:hover {
@@ -269,6 +274,11 @@
 .feedback-form__wrapper-required {
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    gap: 15px;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 0 95px 0 95px;
