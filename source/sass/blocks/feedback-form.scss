@@ -47,7 +47,7 @@
   }
 
   &--general {
-    margin-bottom: 59px;
+    margin-bottom: 60px;
 
     &::before {
       top: -82px;
@@ -74,7 +74,7 @@
   }
 
   &--attractions {
-    margin-bottom: 62px;
+    margin-bottom: 60px;
 
     &::before {
       top: -105px;
@@ -101,7 +101,7 @@
   }
 
   &--emotions {
-    margin-bottom: 48px;
+    margin-bottom: 50px;
 
     &::before {
       top: -73px;
@@ -115,6 +115,10 @@
         padding-right: 65px;
         padding-left: 65px;
       }
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 46px;
     }
   }
 }
@@ -194,9 +198,18 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  @media (min-width: $desktop-width) {
+    display: flex;
+    column-gap: 63px;
+  }
+
   &--general {
     @media (min-width: $tablet-width) {
       margin-left: 37px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 52px;
     }
   }
 
@@ -204,12 +217,10 @@
     @media (min-width: $tablet-width) {
       margin-left: 83px;
     }
-  }
 
-  @media (min-width: $desktop-width) {
-    margin-left: 46px;
-    display: flex;
-    column-gap: 63px;
+    @media (min-width: $desktop-width) {
+      margin-left: 43px;
+    }
   }
 }
 
@@ -252,6 +263,10 @@
 .feedback-form__wrapper-required {
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 95px 0 95px;
+  }
 }
 
 .feedback-form__required {
@@ -266,5 +281,13 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     padding-top: 11px;
+  }
+}
+
+
+.feedback-form__label {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: center;
   }
 }

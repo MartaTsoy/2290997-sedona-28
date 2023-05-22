@@ -9,8 +9,8 @@
   <link rel="apple-touch-icon" href="img/favicon/apple.png">
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="/source/fonts/ptsans.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="/source/fonts/ptsansbold.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Седона</title>
 </head>
@@ -129,7 +129,7 @@
           </fieldset>
 
           <fieldset class="feedback-form__fieldset feedback-form__fieldset--attractions">
-            <legend class="feedback-form__legend feedback-form__legend--attractions">Посещенные<br hidden class="advantages__break">достопримечательности:</legend>
+            <legend class="feedback-form__legend feedback-form__legend--attractions">Посещенные&ensp;<br hidden class="advantages__break">достопримечательности:</legend>
             <ul class="feedback-form__list feedback-form__list--attractions">
               <li class="feedback-form__item feedback-form__item--attractions">
                 <label class="feedback-form__label checkbox">
@@ -179,7 +179,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--secondary">
       <p class="page-footer__hashtag">#visitSEDONA</p>
 
       <ul class="page-footer__social social">
@@ -216,6 +216,28 @@
         </svg>
       </a>
     </footer>
+  </div>
+
+  <!--
+
+  <div class="modal modal--failure">
+    <div class="modal__container">
+      <h3 class="modal__title">Что-то пошло не так!</h3>
+      <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="button modal__button" type="button">Ок</button>
+    </div>
+  </div>
+-->
+  <div class="modal modal--success">
+    <div class="modal__container modal__container--success">
+      <div class="modal__content">
+        <h3 class="modal__title modal__title--success">Ваш отзыв отправлен!</h3>
+        <p class="modal__description modal__description--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      </div>
+      <div class="modal__button-wrapper">
+        <button class="button modal__button modal__button--success" type="button">Закрыть окно</button>
+      </div>
+    </div>
   </div>
 
   <script src="js/script.js"></script>

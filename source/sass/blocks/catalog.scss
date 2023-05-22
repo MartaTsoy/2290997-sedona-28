@@ -9,7 +9,7 @@
 }
 
 .catalog__header {
-  padding: 37px 20px 37px 20px;
+  padding: 39px 20px 35px 20px;
 
   .heading__title {
     margin-bottom: 25px;
@@ -45,7 +45,7 @@
 }
 
 .catalog__item {
-  padding: 22px 20px;
+  padding: 24px 20px;
   border-top: 1px solid $grey-devider-catalog;
 
   &:last-child {
@@ -90,7 +90,7 @@
 
 .catalog__image {
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 17px;
   width: 100%;
   height: auto;
 
